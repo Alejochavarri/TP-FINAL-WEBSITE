@@ -1,0 +1,396 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5CEBB01A-C22D-4AE6-B592-13D771683271}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NetPulse</RootNamespace>
+    <AssemblyName>NetPulse</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44383</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ActivarServicio.aspx" />
+    <Content Include="AgendarMantenimiento.aspx" />
+    <Content Include="AgregarCliente.aspx" />
+    <Content Include="AgregarPlan.aspx" />
+    <Content Include="AgregarServicio.aspx" />
+    <Content Include="AgregarTecnico.aspx" />
+    <Content Include="AltaServicio.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="DetalleCliente.aspx" />
+    <Content Include="FinalizarMantenimiento.aspx" />
+    <Content Include="FormActivarServicio.aspx" />
+    <Content Include="FormAgregarServicio.aspx" />
+    <Content Include="FormEditMantenimiento.aspx" />
+    <Content Include="GestionEstados.aspx" />
+    <Content Include="GestionServicio.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="HistorialMantenimientos.aspx" />
+    <Content Include="InfoCliente.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="MainTecnico.aspx" />
+    <Content Include="Mantenimientos.aspx" />
+    <Content Include="Modificaciones.aspx" />
+    <Content Include="ModificarCliente.aspx" />
+    <Content Include="ModificarServicio.aspx" />
+    <Content Include="Perfil.aspx" />
+    <Content Include="PerfilTec.aspx" />
+    <Content Include="Planes.aspx" />
+    <Content Include="Reclamos.aspx" />
+    <Content Include="Servicios.aspx" />
+    <Content Include="ServiciosMorosos.aspx" />
+    <Content Include="Tecnicos.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActivarServicio.aspx.cs">
+      <DependentUpon>ActivarServicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ActivarServicio.aspx.designer.cs">
+      <DependentUpon>ActivarServicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgendarMantenimiento.aspx.cs">
+      <DependentUpon>AgendarMantenimiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgendarMantenimiento.aspx.designer.cs">
+      <DependentUpon>AgendarMantenimiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarCliente.aspx.cs">
+      <DependentUpon>AgregarCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgregarCliente.aspx.designer.cs">
+      <DependentUpon>AgregarCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarPlan.aspx.cs">
+      <DependentUpon>AgregarPlan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgregarPlan.aspx.designer.cs">
+      <DependentUpon>AgregarPlan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarServicio.aspx.cs">
+      <DependentUpon>AgregarServicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgregarServicio.aspx.designer.cs">
+      <DependentUpon>AgregarServicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarTecnico.aspx.cs">
+      <DependentUpon>AgregarTecnico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgregarTecnico.aspx.designer.cs">
+      <DependentUpon>AgregarTecnico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AltaServicio.aspx.cs">
+      <DependentUpon>AltaServicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AltaServicio.aspx.designer.cs">
+      <DependentUpon>AltaServicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DetalleCliente.aspx.cs">
+      <DependentUpon>DetalleCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DetalleCliente.aspx.designer.cs">
+      <DependentUpon>DetalleCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FinalizarMantenimiento.aspx.cs">
+      <DependentUpon>FinalizarMantenimiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FinalizarMantenimiento.aspx.designer.cs">
+      <DependentUpon>FinalizarMantenimiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormActivarServicio.aspx.cs">
+      <DependentUpon>FormActivarServicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormActivarServicio.aspx.designer.cs">
+      <DependentUpon>FormActivarServicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormAgregarServicio.aspx.cs">
+      <DependentUpon>FormAgregarServicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormAgregarServicio.aspx.designer.cs">
+      <DependentUpon>FormAgregarServicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditMantenimiento.aspx.cs">
+      <DependentUpon>FormEditMantenimiento.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FormEditMantenimiento.aspx.designer.cs">
+      <DependentUpon>FormEditMantenimiento.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestionEstados.aspx.cs">
+      <DependentUpon>GestionEstados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestionEstados.aspx.designer.cs">
+      <DependentUpon>GestionEstados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GestionServicio.aspx.cs">
+      <DependentUpon>GestionServicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GestionServicio.aspx.designer.cs">
+      <DependentUpon>GestionServicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HistorialMantenimientos.aspx.cs">
+      <DependentUpon>HistorialMantenimientos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HistorialMantenimientos.aspx.designer.cs">
+      <DependentUpon>HistorialMantenimientos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InfoCliente.aspx.cs">
+      <DependentUpon>InfoCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InfoCliente.aspx.designer.cs">
+      <DependentUpon>InfoCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainTecnico.aspx.cs">
+      <DependentUpon>MainTecnico.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainTecnico.aspx.designer.cs">
+      <DependentUpon>MainTecnico.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos.aspx.cs">
+      <DependentUpon>Mantenimientos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos.aspx.designer.cs">
+      <DependentUpon>Mantenimientos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterTecnico.Master.cs">
+      <DependentUpon>MasterTecnico.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterTecnico.Master.designer.cs">
+      <DependentUpon>MasterTecnico.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Modificaciones.aspx.cs">
+      <DependentUpon>Modificaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modificaciones.aspx.designer.cs">
+      <DependentUpon>Modificaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarCliente.aspx.cs">
+      <DependentUpon>ModificarCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModificarCliente.aspx.designer.cs">
+      <DependentUpon>ModificarCliente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarServicio.aspx.cs">
+      <DependentUpon>ModificarServicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModificarServicio.aspx.designer.cs">
+      <DependentUpon>ModificarServicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Perfil.aspx.cs">
+      <DependentUpon>Perfil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Perfil.aspx.designer.cs">
+      <DependentUpon>Perfil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PerfilTec.aspx.cs">
+      <DependentUpon>PerfilTec.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PerfilTec.aspx.designer.cs">
+      <DependentUpon>PerfilTec.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Planes.aspx.cs">
+      <DependentUpon>Planes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Planes.aspx.designer.cs">
+      <DependentUpon>Planes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reclamos.aspx.cs">
+      <DependentUpon>Reclamos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reclamos.aspx.designer.cs">
+      <DependentUpon>Reclamos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Servicios.aspx.cs">
+      <DependentUpon>Servicios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Servicios.aspx.designer.cs">
+      <DependentUpon>Servicios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ServiciosMorosos.aspx.cs">
+      <DependentUpon>ServiciosMorosos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ServiciosMorosos.aspx.designer.cs">
+      <DependentUpon>ServiciosMorosos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SiteMaster.Master.cs">
+      <DependentUpon>SiteMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SiteMaster.Master.designer.cs">
+      <DependentUpon>SiteMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Tecnicos.aspx.cs">
+      <DependentUpon>Tecnicos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tecnicos.aspx.designer.cs">
+      <DependentUpon>Tecnicos.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterTecnico.Master" />
+    <None Include="packages.config" />
+    <Content Include="SiteMaster.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dominio\Dominio.csproj">
+      <Project>{3aa65b55-5447-42e7-8b07-1ebdd6094266}</Project>
+      <Name>Dominio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Negocio\Negocio.csproj">
+      <Project>{9c74c07f-9916-42fa-bfa5-3d3531360037}</Project>
+      <Name>Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56240</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44383/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

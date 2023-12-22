@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetPulse", "NetPulse.csproj", "{5CEBB01A-C22D-4AE6-B592-13D771683271}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dominio", "..\Dominio\Dominio.csproj", "{3AA65B55-5447-42E7-8B07-1EBDD6094266}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Negocio", "..\Negocio\Negocio.csproj", "{9C74C07F-9916-42FA-BFA5-3D3531360037}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5CEBB01A-C22D-4AE6-B592-13D771683271}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CEBB01A-C22D-4AE6-B592-13D771683271}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CEBB01A-C22D-4AE6-B592-13D771683271}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CEBB01A-C22D-4AE6-B592-13D771683271}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AA65B55-5447-42E7-8B07-1EBDD6094266}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AA65B55-5447-42E7-8B07-1EBDD6094266}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AA65B55-5447-42E7-8B07-1EBDD6094266}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AA65B55-5447-42E7-8B07-1EBDD6094266}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C74C07F-9916-42FA-BFA5-3D3531360037}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C74C07F-9916-42FA-BFA5-3D3531360037}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C74C07F-9916-42FA-BFA5-3D3531360037}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C74C07F-9916-42FA-BFA5-3D3531360037}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {38A51D78-25B7-414D-8C7C-4226872EA233}
+	EndGlobalSection
+EndGlobal
